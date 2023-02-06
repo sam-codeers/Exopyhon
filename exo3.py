@@ -1,11 +1,13 @@
-def validate_plate(plate):
-    if len(plate) != 7:
+# definition de plaque
+
+def validate_plate (plaque):
+    if len(plaque) != 7:
         return False
-    if not plate[0:2].isdigit():
+    if not plaque[0:2].isdigit():
         return False
-    if not plate[3:7].isalpha():
+    if not plaque[3:7].isalpha():
         return False
-    if plate[2] != '-':
+    if plaque[2] != '-':
         return False
     return True
 
@@ -14,4 +16,3 @@ if validate_plate(plate):
     print("Plaque valide")
 else:
     print("Plaque non valide")
-    
