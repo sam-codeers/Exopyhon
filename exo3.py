@@ -14,4 +14,4 @@ if validate_plate(plate):
     print("Plaque valide")
 else:
     print("Plaque non valide")
-
+    
